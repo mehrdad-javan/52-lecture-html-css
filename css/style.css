@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
+  /*background: url('images/lexicon.png');*/
+}
+header {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+  font-size: 32px;
+}
+nav {
+  text-align: center;
+  background-color: gray;
+  padding: 10px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+}
+.container {
+  padding: 20px;
+  color: rgb(48, 48, 48);
+}
+#tbl-id {
+  color: red;
+}
