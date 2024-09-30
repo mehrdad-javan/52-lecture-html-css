@@ -4,83 +4,114 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: aliceblue;
+        /*background: url('images/lexicon.png');*/
+      }
+      header {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 20px;
+        font-size: 32px;
+      }
+      nav {
+        text-align: center;
+        background-color: gray;
+        padding: 10px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        margin: 15px;
+      }
+      .container {
+        padding: 20px;
+        color: rgb(48, 48, 48);
+      }
+      #tbl-id {
+        color: red;
+      }
+    </style>
   </head>
   <body>
-    <header><h1>HTML CSS Basics Tutorial</h1></header>
+    <header>
+      <h1>HTML CSS Basics Tutorial</h1>
+    </header>
+
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Login</a>
-        <a href="#">Register</a>
-        <a href="#">Contact</a>
+      <a href="#">Home</a>
+      <a href="#">Login</a>
+      <a href="#">Register</a>
+      <a href="#">Contact</a>
     </nav>
-    <main>
-        <form>
-            <h3>Form</h3>
-            <p>Please fill in this form to create an account.</p>
-            <hr />
-            <label><b>First Name</b></label>
-            <input type="text" id="fn" placeholder="Enter First Name" />
-            <br/>
+    <main class="container">
+      <form>
+        <h3>Form</h3>
+        <p>Please fill in this form to create an account.</p>
+        <hr />
+        <label><b>First Name</b></label>
+        <input type="text" id="fn" placeholder="Enter First Name" />
+        <br />
 
-            <label><b>Last Name</b></label>
-            <input type="text" id="ln" placeholder="Enter Last Name" />
-            <br/>
-            
-            
-            <label><b>Email</b></label>
-            <input type="email" id="email" placeholder="Enter Email" />
-            <br/>
-            
-            <label>Course</label>
-            <select>
-                <option>JAVA</option>
-                <option>Python</option>
-                <option>C#</option>
-            </select>
-            <br/>
+        <label><b>Last Name</b></label>
+        <input type="text" id="ln" placeholder="Enter Last Name" />
+        <br />
 
-            <label>Description</label>
-            <textarea placeholder="Enter your comment..."></textarea>
-            <br/>
+        <label><b>Email</b></label>
+        <input type="email" id="email" placeholder="Enter Email" />
+        <br />
 
-            <hr />
-            <button>Register</button>
-            <br/>
-        </form>
-        <hr/>
-        <table>
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
+        <label>Course</label>
+        <select>
+          <option>JAVA</option>
+          <option>Python</option>
+          <option>C#</option>
+        </select>
+        <br />
 
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Mehrdad</td>
-                    <td>Javan</td>
-                    <td>
-                        <button>Edit</button>
-                        <button>Delete</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Simon</td>
-                    <td>Elbrink</td>
-                    <td>
-                        <button>Edit</button>
-                        <button>Delete</button>
-                    </td>
-                </tr>
-            </tbody>
+        <label>Description</label>
+        <textarea placeholder="Enter your comment..."></textarea>
+        <br />
 
-        </table>
+        <hr />
+        <button>Register</button>
+        <br />
+      </form>
+      <hr />
+      <table>
+        <thead>
+          <tr>
+            <th id="tbl-id">Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
 
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mehrdad</td>
+            <td>Javan</td>
+            <td>
+              <button>Edit</button>
+              <button>Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Simon</td>
+            <td>Elbrink</td>
+            <td>
+              <button>Edit</button>
+              <button>Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </main>
     <footer>Copyright &copy; 2024 Lexicon</footer>
   </body>
